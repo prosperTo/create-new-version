@@ -1,0 +1,21 @@
+name: 'create-yaml'
+description: 'Create any .yaml or .yml'
+inputs:
+  tags:
+    description: 'Array tags Provider of APi Github'
+    required: true
+  params:
+    description: 'Params in Json config to resolve type version'
+    required: true
+  version:
+    description: 'Its Alpha or Beta'
+    required: true
+outputs:
+  data:
+    description: 'Descriptions'
+runs:
+  using: 'node12'
+  main: 'index.js'
+branding:
+  icon: 'book-open'  
+  color: 'yellow'

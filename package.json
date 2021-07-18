@@ -1,0 +1,12 @@
+{
+  "name": "create-new-version-software",
+  "version": "1.0.0",
+  "description": "Set Variables in git Action of new version to more time its new tag software version",
+  "main": "index.js",
+  "author": "Tomas Coeli",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^5.0.0"
+  }
+}
