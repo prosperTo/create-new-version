@@ -11,10 +11,11 @@ const start = async () => {
 
   let finalVersion
 
-  const tagsVersion = arrayFilter[arrayFilter.length - 1].ref.split('/')[2]
+  
   const versionTag = JSON.parse(params).versioning
 
   if(arrayFilter.length > 1 ) {
+    const tagsVersion = arrayFilter[arrayFilter.length - 1].ref.split('/')[2]
 
     const higher = tagsVersion.split('-')[0].split('.')[0].substring(1)
     const minium = tagsVersion.split('-')[0].split('.')[1]
