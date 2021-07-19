@@ -14,7 +14,7 @@ const start = async () => {
   
   const versionTag = JSON.parse(params).versioning
 
-  if(arrayFilter.length > 1 ) {
+  if(arrayFilter.length > 0 ) {
     const tagsVersion = arrayFilter[arrayFilter.length - 1].ref.split('/')[2]
 
     const higher = tagsVersion.split('-')[0].split('.')[0].substring(1)
